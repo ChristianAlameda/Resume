@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.All{
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to left top, blue, red);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.All .Contacts{
+    font-size:xx-large;
+    font-style: italic;
+    font-stretch: expanded;
+    display:inline-block;
+}
+
+
+.Options ul li{
+    display: inline-block;
+    margin-right: 35px;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+.Options ul li a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
