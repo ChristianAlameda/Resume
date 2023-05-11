@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color:black;
+}
+.All{
+    background-Color: purple;
+}
+
+
+.All .Contacts{
+    font-size:xx-large;
+    font-style: italic;
+    font-stretch: expanded;
+    display:inline-block;
+}
+.email-name, .phone-number-declaration{
+    display:inline-block;
+}
+.email, .phone-number{
+    display:inline-block;
+}
+.Options ul li{
+    margin:10px;
+    display: inline-block;
+    
+    cursor: pointer;
+    align-items: center;
+    background-color:aquamarine;
+    border-radius:8px;
+}
+
+.Options ul li a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.Options ul li a:hover{
+    background-color:black;
+    color:aquamarine;
+}
+.Options ul li a:active{
+    background-color:aquamarine;
+    color:purple;
+}
