@@ -1,41 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Christian's Online Resume</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <!--FONT-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--Social Pictures-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
-</head>
-    <body>
-        <div class="header">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="#">Christian Daniel Alameda</a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="Resume (7).pdf">Resume</a></li>
 
-                    </ul>
-                </div>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #20232a 0%, #0c0d0e 100%); /* Subtle gradient background */
+            color: #fff;
+            transition: background 0.5s ease-in-out; /* Smooth background transition */
+        }
+        
+        .header {
+            background: #282c34; /* Dark background color */
+            padding: 10px 0;
+            transition: background 0.5s ease-in-out; /* Smooth background transition */
+        }
+        
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo a {
+            color: #61dafb; /* Blue accent color */
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .menu li {
+            margin-right: 20px;
+        }
+        
+        .menu a {
+            color: #61dafb; /* Blue accent color */
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        
+        .menu a:hover {
+            color: #ffd700; /* Gold accent color on hover */
+        }
+        
+        .contact-info {
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto;
+            background: #282c34; /* Dark background color */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow */
+            transition: background 0.5s ease-in-out; /* Smooth background transition */
+        }
+        
+        .email,
+        .residence,
+        .phone-number {
+            background: #282c34; /* Dark background color */
+            font-size: 1.2em;
+            color: #61dafb; /* Blue accent color */
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html">Christian Daniel Alameda</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="Resume (7).pdf">Resume</a></li>
+                </ul>
             </div>
         </div>
-        
-        <div class="social-icons">
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100073662128998"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/BillCypherPiper"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/christian-alameda-a76039253/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://www.instagram.com/calameda02/"><i class="fa fa-instagram"></i></a></li>
-            </ul>
+    </div>
+    <div class="contact-info">
+        <div class="email">
+            cdalamed@gmail.com
+            or 
+            calameda@outlook.com
         </div>
-        
-    </body>
+        <div class="phone-number">
+            209-496-5686
+        </div>
+        <div class="residence">
+            3516 Beachler Drive, CA, 95456
+        </div>
+    </div>
+</body>
 </html>

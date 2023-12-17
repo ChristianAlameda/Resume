@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Christian's Online Resume</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--FONT-->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--Social Pictures-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: black;
+            background-color: #121212; /* Dark background color */
             margin: 0;
+            color: #fff;
+            transition: background-color 0.3s;
         }
         
         div {
             max-width: 800px;
             margin: 20px auto;
-            background-color: #fff;
+            background-color: #1f1f1f; /* Darker background color */
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Darker box shadow */
+            transition: background-color 0.3s, box-shadow 0.3s;
         }
         .header {
             background-color: #333;
@@ -38,7 +36,7 @@
         }
         
         .logo a {
-            color: #000;
+            color: #ffd700; /* Gold color for the logo */
             text-decoration: none;
             font-size: 1.5em;
             font-weight: bold;
@@ -56,7 +54,7 @@
         }
         
         .menu a {
-            color: #000;
+            color: #fff;
             text-decoration: none;
             font-size: 1.2em;
             transition: color 0.3s;
@@ -71,20 +69,22 @@
         }
 
         .project {
-            border: 1px solid #ddd;
+            border: 1px solid #333;
+            background-color: #2c2c2c; /* Dark background color for projects */
             margin-bottom: 15px;
             padding: 15px;
+            transition: background-color 0.3s;
         }
 
         .project p {
             font-size: 1.2em;
             margin-bottom: 10px;
-            color: #333;
+            color: #fff;
         }
 
         .description {
             height: 100px; /* Adjust the height as needed */
-            background-color: #f9f9f9;
+            background-color: #333; /* Darker background color for descriptions */
             margin-bottom: 10px;
         }
 
@@ -101,58 +101,99 @@
         .link:hover {
             background-color: #0056b3;
         }
+
+        /* Scroll to top button */
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: none;
+            transition: background-color 0.3s;
+        }
+
+        #scroll-to-top:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
-    <body>
-        <div class="header">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="home.html">Christian Daniel Alameda</a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="Resume (7).pdf">Resume</a></li>
-
-                    </ul>
-                </div>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html">Christian Daniel Alameda</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume (7).pdf">Resume</a></li>
+                </ul>
             </div>
         </div>
-        
-        <div>
-            <ul class="project-list">
-                <li class="project">
-                    <p>Website Status Checker</p>
-                    <div class="description">
-                        This program, developed for California State University Stanislaus' CS-4800 2023 Fall class with Dr. Hatem, monitors server health by pinging servers to check for responsiveness and latency. It allows users to set a polling rate and records server status and latency in a database for later visualization through histograms. The program is accessible on a local machine or the web (subject to firewall permissions) and supports pinging devices on both Local Area Networks (LAN) and Wide Area Networks (WAN).
-                    </div>
-                    <a class="link" href="https://github.com/CastilloAnthony/CS-4800_Project_Sherlock">Website Status Checker</a>
-                </li>
-                <li class="project">
-                    <p>Chess</p>
-                    <div class="description">
-                        Chess game that uses the rules set by the chess federation, allows for black and white pieces to move and checks for legallity
-                    </div>
-                    <a class="link" href="https://github.com/ChristianAlameda/chess">Chess</a>
-                </li>
-                <li class="project">
-                    <p>Bird Watchers</p>
-                    <div class="description">
-                        An easier way for folks to site their birds in their catalog incorporating user authentification, a bird database, and user abilities such as being able to add, remove, or edit from their profile.
-                    </div>
-                    <a class="link" href="https://github.com/ChristianAlameda/BirdWatchers">BirdWatchers</a>
-                </li>
-                <li class="project">
-                    <p>Webscraping Professor</p>
-                    <div class="description">
-                        Web Scraped from Modesto Junior College, Merced Junior College, and San Joquin Delta College to get professor email, phone number, and subject taught.
-                    </div>
-                    <a class="link" href="https://github.com/ChristianAlameda/web_scraping_professors">Webscraping Professors</a>
-                </li>
-            </ul>
-        </div>
-        
-    </body>
+    </div>
+    
+    <div id="about">
+        <!-- Your About section goes here -->
+    </div>
+
+    <div>
+        <ul class="project-list">
+            <li class="project">
+                <p>Website Status Checker</p>
+                <div class="description">
+                    This program, developed for California State University Stanislaus' CS-4800 2023 Fall class with Dr. Hatem, monitors server health by pinging servers to check for responsiveness and latency. It allows users to set a polling rate and records server status and latency in a database for later visualization through histograms. The program is accessible on a local machine or the web (subject to firewall permissions) and supports pinging devices on both Local Area Networks (LAN) and Wide Area Networks (WAN).
+                </div>
+                <a class="link" href="https://github.com/CastilloAnthony/CS-4800_Project_Sherlock">Website Status Checker</a>
+            </li>
+            <li class="project">
+                <p>Chess</p>
+                <div class="description">
+                    Chess game that uses the rules set by the chess federation, allows for black and white pieces to move and checks for legality
+                </div>
+                <a class="link" href="https://github.com/ChristianAlameda/chess">Chess</a>
+            </li>
+            <li class="project">
+                <p>Bird Watchers</p>
+                <div class="description">
+                    An easier way for folks to sight their birds in their catalog incorporating user authentication, a bird database, and user abilities such as being able to add, remove, or edit from their profile.
+                </div>
+                <a class="link" href="https://github.com/ChristianAlameda/BirdWatchers">Bird Watchers</a>
+            </li>
+            <li class="project">
+                <p>Webscraping Professor</p>
+                <div class="description">
+                    Web Scraped from Modesto Junior College, Merced Junior College, and San Joaquin Delta College to get professor email, phone number, and subject taught.
+                </div>
+                <a class="link" href="https://github.com/ChristianAlameda/web_scraping_professors">Webscraping Professors</a>
+            </li>
+        </ul>
+    </div>
+    
+
+    <!-- Scroll to top button -->
+    <div id="scroll-to-top" onclick="scrollToTop()">^</div>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scroll-to-top").style.display = "block";
+            } else {
+                document.getElementById("scroll-to-top").style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+</body>
 </html>
