@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Christian's Online Resume</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--Social Pictures-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+	
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            margin: 0;
+        }
+        
+        div {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo a {
+            color: #000;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .menu li {
+            margin-right: 20px;
+        }
+        
+        .menu a {
+            color: #000;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        
+        .menu a:hover {
+            color: #ffd700; /* Change the color on hover */
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        .project p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .description {
+            height: 100px; /* Adjust the height as needed */
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+
+        .link {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="home.html">Christian Daniel Alameda</a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="Resume (7).pdf">Resume</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <ul class="project-list">
+                <li class="project">
+                    <p>Website Status Checker</p>
+                    <div class="description">
+                        This program, developed for California State University Stanislaus' CS-4800 2023 Fall class with Dr. Hatem, monitors server health by pinging servers to check for responsiveness and latency. It allows users to set a polling rate and records server status and latency in a database for later visualization through histograms. The program is accessible on a local machine or the web (subject to firewall permissions) and supports pinging devices on both Local Area Networks (LAN) and Wide Area Networks (WAN).
+                    </div>
+                    <a class="link" href="https://github.com/CastilloAnthony/CS-4800_Project_Sherlock">Website Status Checker</a>
+                </li>
+                <li class="project">
+                    <p>Chess</p>
+                    <div class="description">
+                        Chess game that uses the rules set by the chess federation, allows for black and white pieces to move and checks for legallity
+                    </div>
+                    <a class="link" href="https://github.com/ChristianAlameda/chess">Chess</a>
+                </li>
+                <li class="project">
+                    <p>Bird Watchers</p>
+                    <div class="description">
+                        An easier way for folks to site their birds in their catalog incorporating user authentification, a bird database, and user abilities such as being able to add, remove, or edit from their profile.
+                    </div>
+                    <a class="link" href="https://github.com/ChristianAlameda/BirdWatchers">BirdWatchers</a>
+                </li>
+                <li class="project">
+                    <p>Webscraping Professor</p>
+                    <div class="description">
+                        Web Scraped from Modesto Junior College, Merced Junior College, and San Joquin Delta College to get professor email, phone number, and subject taught.
+                    </div>
+                    <a class="link" href="https://github.com/ChristianAlameda/web_scraping_professors">Webscraping Professors</a>
+                </li>
+            </ul>
+        </div>
+        
+    </body>
+</html>

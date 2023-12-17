@@ -21,7 +21,8 @@ ul{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(abstractPainting.jpg);
+    /* background-image: url(abstractPainting.jpg); */
+    background:black;
     background-repeat: no-repeat;
     background-size: cover;
 }
