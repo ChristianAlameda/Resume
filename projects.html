@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #121212; /* Dark background color */
-            margin: 0;
-            color: #fff;
-            transition: background-color 0.3s;
-        }
-        
-        div {
+        div ul{
             max-width: 800px;
             margin: 20px auto;
-            background-color: #1f1f1f; /* Darker background color */
+            background-color: #1f1f1f; 
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Darker box shadow */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
             transition: background-color 0.3s, box-shadow 0.3s;
-        }
-        .header {
-            background-color: #333;
+        } 
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #20232a 0%, #0c0d0e 100%); /* Subtle gradient background */
             color: #fff;
+            transition: background 0.5s ease-in-out; /* Smooth background transition */
+        }
+        
+        .header {
+            background: #282c34; /* Dark background color */
             padding: 10px 0;
+            transition: background 0.5s ease-in-out; /* Smooth background transition */
         }
         
         .navbar {
@@ -36,7 +38,7 @@
         }
         
         .logo a {
-            color: #ffd700; /* Gold color for the logo */
+            color: #61dafb; /* Blue accent color */
             text-decoration: none;
             font-size: 1.5em;
             font-weight: bold;
@@ -54,15 +56,16 @@
         }
         
         .menu a {
-            color: #fff;
+            color: #61dafb; /* Blue accent color */
             text-decoration: none;
             font-size: 1.2em;
             transition: color 0.3s;
         }
         
         .menu a:hover {
-            color: #ffd700; /* Change the color on hover */
+            color: #ffd700; /* Gold accent color on hover */
         }
+
         .project-list {
             list-style: none;
             padding: 0;
@@ -132,7 +135,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume (7).pdf">Resume</a></li>
+                    <li><a href="resume (10).pdf">Resume</a></li>
                 </ul>
             </div>
         </div>
@@ -147,28 +150,47 @@
             <li class="project">
                 <p>Website Status Checker</p>
                 <div class="description">
-                    This program, developed for California State University Stanislaus' CS-4800 2023 Fall class with Dr. Hatem, monitors server health by pinging servers to check for responsiveness and latency. It allows users to set a polling rate and records server status and latency in a database for later visualization through histograms. The program is accessible on a local machine or the web (subject to firewall permissions) and supports pinging devices on both Local Area Networks (LAN) and Wide Area Networks (WAN).
+                    ● Led a team of 3 in developing an app tracking website uptime/downtime using AI for predictive analysis.<br>
+                    ● There are over a 1000 possible websites for a user to choose and look at for their technological information.<br>
+                    ● Created using languages: Python, Javascript, CSS, HTML and tools: MongoDB and Flask in 3946 lines and 37 files.
                 </div>
                 <a class="link" href="https://github.com/CastilloAnthony/CS-4800_Project_Sherlock">Website Status Checker</a>
             </li>
             <li class="project">
-                <p>Chess</p>
-                <div class="description">
-                    Chess game that uses the rules set by the chess federation, allows for black and white pieces to move and checks for legality
-                </div>
-                <a class="link" href="https://github.com/ChristianAlameda/chess">Chess</a>
-            </li>
-            <li class="project">
                 <p>Bird Watchers</p>
                 <div class="description">
-                    An easier way for folks to sight their birds in their catalog incorporating user authentication, a bird database, and user abilities such as being able to add, remove, or edit from their profile.
+                    ● Crafted a bird catalog system, enabling users to search/manage birds with various attributes.<br>
+                    ● The system features a database with the top 100 birds and has been accessed by nearly 100 users.<br>
+                    ● This project was created using languages: languages:Python, Javascript, CSS, HTML as well as tools being MongoDB
+                    and Flask and was written in 5502 lines and 19 files.
                 </div>
                 <a class="link" href="https://github.com/ChristianAlameda/BirdWatchers">Bird Watchers</a>
             </li>
             <li class="project">
+                <p>Chess</p>
+                <div class="description">
+                    ● Created a chess game by the rule set provided by The International Chess Federation with a GUI.<br>
+                    ● 500 games have been played using this program.<br>
+                    ● Created using libraries: Pygames and OS in 2,167 lines.
+                </div>
+                <a class="link" href="https://github.com/ChristianAlameda/chess">Chess</a>
+            </li>
+            <li class="project">
+                <p>Menu Creation</p>
+                <div class="description">
+                    ● Developed a menu customization program for restaurants, featuring testing with Lists, Linked Lists, Sorted Linked
+                    Lists, and Hash Tables.<br>
+                    ● Over 50 different menus have been created and customized.<br>
+                    ● Achieved this through the use of a CSV file and using 1206 lines with 33 files
+                </div>
+                <a class="link" href="https://github.com/ChristianAlameda/Menu-Creation">Menu Creation</a>
+            </li>
+            <li class="project">
                 <p>Webscraping Professor</p>
                 <div class="description">
-                    Web Scraped from Modesto Junior College, Merced Junior College, and San Joaquin Delta College to get professor email, phone number, and subject taught.
+                    ● Developed a Web Scraping script for Modesto Junior College, Merced Junior College, and San Joaquin Delta College to get professor email, phone number, and subject taught.<br>
+                    ● Retrieved over 1000 employee information and created email lists that would auto email to the respective people. <br>
+                    ● Achieved this through use of CSVs a library called BeautifulSoup and about 300 lines of code. 
                 </div>
                 <a class="link" href="https://github.com/ChristianAlameda/web_scraping_professors">Webscraping Professors</a>
             </li>
