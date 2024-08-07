@@ -1,0 +1,56 @@
+.header {
+    background: #282c34; /* Dark background color */
+    padding: 10px 0;
+    transition: background 0.5s ease-in-out; /* Smooth background transition */
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #61dafb; /* Blue accent color */
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    color: #61dafb; /* Blue accent color */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ffd700; /* Gold accent color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
