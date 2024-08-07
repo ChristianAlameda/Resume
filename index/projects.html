@@ -4,125 +4,11 @@
     <title>Christian's Online Resume</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        div ul{
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #1f1f1f; 
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-            transition: background-color 0.3s, box-shadow 0.3s;
-        } 
+    <!-- import project.css -->
+    <link rel="stylesheet" href="../styles/project.css">
+    <!-- import header.css -->
+    <link rel="stylesheet" href="../styles/header.css">
 
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #20232a 0%, #0c0d0e 100%); /* Subtle gradient background */
-            color: #fff;
-            transition: background 0.5s ease-in-out; /* Smooth background transition */
-        }
-        
-        .header {
-            background: #282c34; /* Dark background color */
-            padding: 10px 0;
-            transition: background 0.5s ease-in-out; /* Smooth background transition */
-        }
-        
-        .navbar {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo a {
-            color: #61dafb; /* Blue accent color */
-            text-decoration: none;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        
-        .menu ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        
-        .menu li {
-            margin-right: 20px;
-        }
-        
-        .menu a {
-            color: #61dafb; /* Blue accent color */
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: color 0.3s;
-        }
-        
-        .menu a:hover {
-            color: #ffd700; /* Gold accent color on hover */
-        }
-
-        .project-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .project {
-            border: 1px solid #333;
-            background-color: #2c2c2c; /* Dark background color for projects */
-            margin-bottom: 15px;
-            padding: 15px;
-            transition: background-color 0.3s;
-        }
-
-        .project p {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            color: #fff;
-        }
-
-        .description {
-            height: 100px; /* Adjust the height as needed */
-            background-color: #333; /* Darker background color for descriptions */
-            margin-bottom: 10px;
-        }
-
-        .link {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            padding: 8px 12px;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        .link:hover {
-            background-color: #0056b3;
-        }
-
-        /* Scroll to top button */
-        #scroll-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            display: none;
-            transition: background-color 0.3s;
-        }
-
-        #scroll-to-top:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
     <div class="header">
@@ -132,10 +18,9 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="../pictures/Resume (11)">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                 </ul>
             </div>
         </div>
@@ -147,6 +32,26 @@
 
     <div>
         <ul class="project-list">
+
+            
+            <!-- website status checker -->
+            <li class="project">
+                <p>Atwater Church of the Nazarene Official Website</p>
+                <div class="description">
+                    ● Developed using TypeScript, CSS, HTML, PostgreSQL, Angular, and Supabase in 11,394 lines<br>
+                    ● Fabricated a comprehensive website that facilitated tithing, group joining, staff representation<br>
+                    ● Outlined organizational beliefs.<br>
+                    ● Main: basic Atwater: flask Developer: Angular
+
+                </div>
+                <!-- change first one to something different -->
+                <a class="link" href="https://christianalameda.github.io/church_atwater/index.html">Live Site</a>
+                <!-- these will be code ones -->
+                <a class="code" href="https://github.com/ChristianAlameda/church_atwater">Main</a>
+                <a class="code" href="https://github.com/ChristianAlameda/church_atwater">Flask</a>
+                <a class="code" href="https://github.com/ChristianAlameda/church_atwater/tree/developer">Angular</a>
+            </li>
+            <!-- website status checker -->
             <li class="project">
                 <p>Website Status Checker</p>
                 <div class="description">
@@ -156,6 +61,7 @@
                 </div>
                 <a class="link" href="https://github.com/CastilloAnthony/CS-4800_Project_Sherlock">Website Status Checker</a>
             </li>
+            <!-- bird watchers -->
             <li class="project">
                 <p>Bird Watchers</p>
                 <div class="description">
@@ -166,6 +72,7 @@
                 </div>
                 <a class="link" href="https://github.com/ChristianAlameda/BirdWatchers">Bird Watchers</a>
             </li>
+            <!-- Chess -->
             <li class="project">
                 <p>Chess</p>
                 <div class="description">
@@ -175,6 +82,7 @@
                 </div>
                 <a class="link" href="https://github.com/ChristianAlameda/chess">Chess</a>
             </li>
+            <!-- Menu Creation -->
             <li class="project">
                 <p>Menu Creation</p>
                 <div class="description">
@@ -185,6 +93,7 @@
                 </div>
                 <a class="link" href="https://github.com/ChristianAlameda/Menu-Creation">Menu Creation</a>
             </li>
+            <!-- Webscrapting professors -->
             <li class="project">
                 <p>Webscraping Professor</p>
                 <div class="description">
