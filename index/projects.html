@@ -34,7 +34,6 @@
     <div id="about">
         <!-- Your About section goes here -->
     </div>
-
     <div>
         <ul class="project-list">
             <!-- website status checker -->
@@ -118,12 +117,8 @@
     </div>
     <!-- Scroll to top button -->
     <div id="scroll-to-top" onclick="scrollToTop()">^</div>
-   
-    
-
     <script>
         window.onscroll = function() {scrollFunction()};
-
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("scroll-to-top").style.display = "block";
@@ -131,7 +126,6 @@
                 document.getElementById("scroll-to-top").style.display = "none";
             }
         }
-
         function scrollToTop() {
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
