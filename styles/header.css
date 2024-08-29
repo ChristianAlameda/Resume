@@ -9,8 +9,8 @@
 }
 
 .header .navbar {
-    width: 100%;
-    max-width: 1200px;
+    width: 90%; /* Use a percentage to make it more responsive */
+    max-width: 100%; /* Make sure it doesn't exceed screen width */
     height: 80px;
     margin: 0 auto;
     display: flex;
@@ -80,4 +80,24 @@
 .header .contact-info ul li a.sep {
     margin: 0 28px;
     opacity: 0.3;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 600px) {
+    .header .menu ul {
+        margin-left: 0; /* Remove left margin for smaller screens */
+        padding: 0;
+        flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+        justify-content: center; /* Center menu items */
+    }
+
+    .header .menu ul li {
+        margin-right: 20px; /* Adjust spacing between items */
+    }
+
+    .header .contact-info {
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center the text */
+        margin-top: 10px; /* Add some margin for spacing */
+    }
 }
