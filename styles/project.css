@@ -1,81 +1,98 @@
-div ul{
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #1f1f1f; 
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    transition: background-color 0.3s, box-shadow 0.3s;
-} 
-
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #20232a 0%, #0c0d0e 100%); /* Subtle gradient background */
+    background: linear-gradient(to bottom, #20232a 0%, #0c0d0e 100%);
     color: #fff;
-    transition: background 0.5s ease-in-out; /* Smooth background transition */
+    transition: background 0.5s ease-in-out;
 }
 
+/* Container for Div and UL */
+div ul {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #1f1f1f;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    overflow-x: hidden; /* Prevent text overflow on the right */
+}
+
+/* Center Align Content in the Project List */
 .project-list {
     list-style: none;
     padding: 0;
+    text-align: center; /* Center all text inside the project list */
 }
 
 .project {
+    display: inline-block; /* Make the project a block that can be centered */
+    width: 90%; /* Limit width to ensure it's centered */
+    max-width: 500px; /* Optional max width for better look */
     border: 1px solid #333;
-    background-color: #2c2c2c; /* Dark background color for projects */
-    margin-bottom: 15px;
+    background-color: #2c2c2c;
+    margin: 15px auto; /* Center each project */
     padding: 15px;
     transition: background-color 0.3s;
+    text-align: left; /* Align text within project to left */
 }
 
 .project p {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: #fff;
+    text-align: center; /* Center project description */
 }
 
 .description {
-    height: 100px; /* Adjust the height as needed */
-    background-color: #333; /* Darker background color for descriptions */
+    height: auto; /* Allow text to wrap */
+    background-color: #333;
     margin-bottom: 10px;
+    overflow: hidden; /* Prevent overflow of text */
+    padding: 10px;
+    text-align: center; /* Center text within the description */
 }
 
-.link {
+/* Link and Code Button Styles */
+.link,
+.code {
     display: inline-block;
-    background-color: #007bff;
     color: #fff;
     padding: 8px 12px;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
+    margin: 5px auto; /* Center the buttons */
+}
+
+/* Specific Styles for Link and Code Buttons */
+.link {
+    background-color: #007bff;
 }
 
 .link:hover {
     background-color: #0054ae;
-
 }
 
-
 .code {
-    display: inline-block;
     background-color: #ff0000;
-    color: #fff;
-    padding: 8px 12px;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
 }
 
 .code:hover {
     background-color: #b00000;
 }
 
-/* Scroll to top button */
+/* Outline Removal for Menu Items */
+.menu ul li:focus {
+    outline: none; /* Remove turquoise outline */
+}
+
+/* Scroll to Top Button */
 #scroll-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 20px; /* Position at the bottom */
+    left: 20px; /* Move to the bottom left corner */
     background-color: #007bff;
     color: #fff;
     padding: 10px;
@@ -87,4 +104,27 @@ body {
 
 #scroll-to-top:hover {
     background-color: #0056b3;
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 600px) {
+    .project p,
+    .description,
+    .link,
+    .code {
+        font-size: 1em; /* Adjust text size for smaller screens */
+        width: 100%; /* Ensure elements are full width on small screens */
+        text-align: center; /* Center align for better readability */
+    }
+
+    div ul {
+        padding: 10px; /* Reduce padding for smaller screens */
+        margin: 10px; /* Reduce margin for smaller screens */
+        overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+
+    .project {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: none; /* Remove max-width on small screens */
+    }
 }
