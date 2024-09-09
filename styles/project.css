@@ -63,7 +63,7 @@ div ul {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
-    margin: 5px auto; /* Center the buttons */
+    margin: 5px; /* Center the buttons */
 }
 
 /* Specific Styles for Link and Code Buttons */
